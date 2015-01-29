@@ -23,6 +23,6 @@ git-import-orig -u 1.1.0 ../limereg-1.1.0.tar.gz
 
 #When debian.tar.gz exists on subsequent runs, restore the debian folder created above
 tar -xzf ../debian.tar.gz
-#Now adapt the files in the debian folder to the new version (e.g. version number)
-#Then execute
-#git-buildpackage --git-ignore-new
+
+echo Now adapt the files in the folder limereg/debian to the new version (e.g. version number)
+echo Then execute: cd limereg && git-buildpackage --git-ignore-new
