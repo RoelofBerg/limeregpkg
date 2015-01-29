@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Procedure taken from: http://grumbel.blogspot.de/2010/05/how-to-build-ubuntu-package.html
+
 #prerequisites:
 #sudo apt-get install dh-make git
 #gpg --gen-key
@@ -28,3 +30,16 @@ tar -xzf ../debian.tar.gz
 
 echo Now adapt the files in the folder limereg/debian to the new version (e.g. version number)
 echo Then execute: cd limereg && git-buildpackage --git-ignore-new
+echo .
+echo Check the lint output for warnings and errors. Test the package by calling
+echo apt-get install pbuilder && sudo pbuilder --create 
+echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config
+echo sudo pbuilder --build limereg_1.1.0.dsc
+echo ls /var/cache/pbuilder/results
+echo .
+echo Then publish on launchpad.net (create an account there)
+echo dput ppa:your_username/ppa package_version-1_source.changes
+echo Test the repository
+echo sudo add-apt-repository ppa:your_username/ppa
+echo sudo apt-get update
+echo sudo apt-get install limereg
