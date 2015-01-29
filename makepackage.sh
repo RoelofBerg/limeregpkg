@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#sudo apt-get install dh-make
+#prerequisites:
+#sudo apt-get install dh-make git
+#gpg --gen-key
 
 #Compress the source archive to a tar distribution
 #(Note: The folder should not contain a subfolder named like the project)
