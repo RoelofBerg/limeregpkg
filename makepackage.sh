@@ -40,7 +40,7 @@ echo optional: sudo pbuilder update --components "main restricted universe multi
 echo sudo pbuilder --build limereg_1.1.0.dsc
 echo ls /var/cache/pbuilder/results
 echo .
-echo Then publish on launchpad.net (create an account there)
+echo Then publish on launchpad.net, create an account there
 echo dput ppa:your_username/ppa package_version-1_source.changes
 echo Test the repository
 echo sudo add-apt-repository ppa:your_username/ppa
