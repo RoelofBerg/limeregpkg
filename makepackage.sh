@@ -29,10 +29,13 @@ git-import-orig -u 1.1.0 ../limereg-1.1.0.tar.gz
 tar -xzf ../debian.tar.gz
 
 echo Now adapt the files in the folder limereg/debian to the new version (e.g. version number)
-echo Then execute: cd limereg && git-buildpackage --git-ignore-new
+echo Then execute:
+echo cd limereg
+echo git-buildpackage --git-ignore-new
 echo .
 echo Check the lint output for warnings and errors. Test the package by calling
-echo apt-get install pbuilder && sudo pbuilder --create 
+echo apt-get install pbuilder
+echo sudo pbuilder --create 
 echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config
 echo sudo pbuilder --build limereg_1.1.0.dsc
 echo ls /var/cache/pbuilder/results
