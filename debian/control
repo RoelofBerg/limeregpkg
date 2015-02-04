@@ -1,0 +1,15 @@
+Source: limereg
+Section: contrib/graphics
+Priority: optional
+Maintainer: Roelof Berg <rberg@berg-solutions.de>
+Build-Depends: debhelper (>= 9), libopencv-dev, libboost-all-dev, help2man
+Standards-Version: 3.9.5
+Homepage: https://github.com/RoelofBerg/limereg
+
+Package: limereg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight Image Registration
+ Commandline application for image registration.
+ It automatically aligns two images with similar content to each other.
+

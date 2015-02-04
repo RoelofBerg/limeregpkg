@@ -1,0 +1,5 @@
+limereg (1.1.0-1) unstable; urgency=low
+
+  * Initial release. Fixes NB#777000
+
+ -- Roelof Berg <rberg@berg-solutions.de>  Wed, 28 Jan 2015 23:41:26 +0100
