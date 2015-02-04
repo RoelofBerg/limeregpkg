@@ -26,7 +26,7 @@ git-import-orig -u 1.1.0 ../limereg-1.1.0.tar.gz
 #tar -czf ../debian.tar.gz debian/*
 
 #When debian.tar.gz exists on subsequent runs, restore the debian folder created above
-cp ../debian .
+cp -r ../debian .
 
 echo Now adapt the files in the folder limereg/debian to the new version, e.g. version number
 echo Then execute:
