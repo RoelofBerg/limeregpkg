@@ -29,9 +29,9 @@ git-import-orig -u 1.1.0 ../limereg-1.1.0.tar.gz
 cp -r ../debian .
 
 echo Now adapt the files in the folder limereg/debian to the new version, e.g. version number
-echo Then execute:
+echo Then execute (ToDo: How can we avoid sudo here ? Soemthing wron with DESTDIR ?):
 echo cd limereg
-echo git-buildpackage --git-ignore-new
+echo sudo git-buildpackage --git-ignore-new
 echo .
 echo Check the lint output for warnings and errors. Test the package by calling
 echo apt-get install pbuilder
