@@ -29,17 +29,16 @@ git-import-orig -u 1.1.0 ../limereg-1.1.0.tar.gz
 cp -r ../debian .
 
 echo Now adapt the files in the folder limereg/debian to the new version, e.g. version number
-echo Then execute: ToDo: How can we avoid sudo here ? Soemthing wron with DESTDIR ?
+echo Then execute:
 echo cd limereg
-echo sudo git-buildpackage --git-ignore-new
-echo .
+echo git-buildpackage --git-ignore-new
+echo cd ..
 echo Check the lint output for warnings and errors. Test the package by calling
 echo apt-get install pbuilder
 echo sudo pbuilder --create 
 echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config
-echo sudo pbuilder --build limereg_1.1.0.dsc
+echo sudo pbuilder --build limereg_1.1.0-1.dsc
 echo ls /var/cache/pbuilder/results
-echo .
 echo Then publish on launchpad.net, create an account there
 echo dput ppa:your_username/ppa package_version-1_source.changes
 echo Test the repository
