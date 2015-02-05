@@ -32,6 +32,7 @@ echo Now adapt the files in the folder limereg/debian to the new version, e.g. v
 echo Then execute:
 echo cd limereg
 echo git-buildpackage --git-ignore-new
+echo Add -S option for a launchpad source package
 echo cd ..
 echo Check the lint output for warnings and errors. Test the package by calling
 echo apt-get install pbuilder
@@ -40,7 +41,7 @@ echo optional: sudo pbuilder update --components "main restricted universe multi
 echo sudo pbuilder --build limereg_1.1.0-1.dsc
 echo ls /var/cache/pbuilder/results
 echo Then publish on launchpad.net, create an account there
-echo dput ppa:roelofberg/limereg limereg_1.1.0-1_amd64.changes
+echo dput ppa:roelofberg/limereg limereg_1.1.0-0ubuntu1_source.changes
 echo Test the repository
 echo sudo add-apt-repository ppa:your_username/ppa
 echo sudo apt-get update
