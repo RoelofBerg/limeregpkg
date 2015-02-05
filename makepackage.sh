@@ -41,6 +41,8 @@ echo optional: sudo pbuilder update --components "main restricted universe multi
 echo sudo pbuilder --build limereg_1.1.0-1.dsc
 echo ls /var/cache/pbuilder/results
 echo Then publish on launchpad.net, create an account there
+echo add a PPA - not a project-, upload your gnugp key, sign the Ubuntu code
+echo of conduct
 echo dput ppa:roelofberg/limereg limereg_1.1.0-0ubuntu1_source.changes
 echo Test the repository
 echo sudo add-apt-repository ppa:your_username/ppa
