@@ -1,4 +1,5 @@
 Update the package like this:
+(Note: Minor edits possible by just changing the -1 suffig in debian/files ?)
 
 Create a signed tag:
 git tag -s -a v1.x.0 -m "Version 1.x.0"
