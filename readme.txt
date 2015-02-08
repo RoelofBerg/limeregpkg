@@ -1,5 +1,8 @@
 Update the package like this:
 
+Update version info in the source (limereg_common.h) and releasenotes.txt
+(plus checkin !)
+
 Create a signed tag:
 git tag -s -a v1.x.0 -m "Version 1.x.0"
 git push
@@ -9,7 +12,8 @@ git checkout -b v1.x
 git push origin v1.x
 (Later back: git checkout master)
 
-Update all information in the debian folder, esp. versions
+Update version information (etc.) in the debian folder: changelog, files
+Also upate makepackage.sh
 ./cleanup.sh
 ./makepackage.sh
 cd limereg
