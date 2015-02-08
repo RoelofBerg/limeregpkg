@@ -1,8 +1,13 @@
 Update the package like this:
 
 Create a signed tag:
-git tag -s -a v1.x.0 -m Version 1.x.0
+git tag -s -a v1.1.0-1 -m "Version 1.1.0-1"
 git push
+
+Create a branch:
+git checkout -b v1.x.0
+git push origin v1.x.0
+(Later back: git checkout master)
 
 Update all information in the debian folder, esp. versions
 ./cleanup.sh
