@@ -1,0 +1,18 @@
+Update the package like this:
+
+Create a signed tag:
+git tag -s -a v1.x.0 -m Version 1.x.0
+git push
+
+Update all information in the debian folder, esp. versions
+./cleanup.sh
+./makepackage.sh
+cd limereg
+git-buildpackage --git-ignore-new -S
+cd ..
+dput -f ppa:roelofberg/limereg limereg_1.x.0-0ubuntu1_source.changes
+
+If something goes wrong call git-buildpackage without the -S option and use
+sudo pbuilder --build limereg_1.x.0-1.dsc  (as written in makepackage.sh)
+to debug the package building process locally.
+
