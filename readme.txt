@@ -1,6 +1,6 @@
 Update the package like this:
 
-Update version info in the source (limereg_common.h) and releasenotes.txt
+Update version info in the source (limereg_common.h), releasenotes.txt and the Makefile
 (plus checkin !)
 
 Create a signed tag:
