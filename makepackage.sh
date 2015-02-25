@@ -34,7 +34,10 @@ echo cd liblimereg0
 echo git-buildpackage --git-ignore-new
 echo Add -S option for a launchpad source package
 echo cd ..
-echo Check the lint output for warnings and errors. Test the package by calling
+echo Check the lint output for warnings and errors.
+echo look at the content with dpkg-deb -c *.deb
+echo test the installation with dpkg -i *.deb
+echo Test the package by calling
 echo apt-get install pbuilder
 echo sudo pbuilder --create 
 echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config
