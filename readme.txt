@@ -23,13 +23,6 @@ dput -f ppa:roelofberg/limereg limereg_1.x.0-0ubuntu1_source.changes
 
 If Launchpad rejects the file:
 
-Optional: If something goes wrong call git-buildpackage without the -S option and use
-sudo pbuilder --build limereg0_0.9.0-1.dsc  (as written in makepackage.sh)
-to debug the package building process locally.
-
-Delete the tags again: git tag -d v0.9.0 && git push origin :refs/tags/v0.9.0
-Fix the bug
-Add tags again as shown above
-(You may want to cherry pick the fix to master lateron.)
-In debian/changelog raise the subsubminor version: liblimereg0_0.9.0-0ubuntu1 liblimereg0_0.9.0-1ubuntu1
-Repeat clean, build and dput (use the risn subsubminor also in dput)
+Optional: If something goes wrong, raise the version. E.g. 0.9.0 to 0.9.1
+Don't try anything else. Launchpad will block any attempt.
+(Raise in all files, about 5-10. Create new signed tags ...)
