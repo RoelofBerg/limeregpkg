@@ -1,15 +1,15 @@
-Source: limereg
+Source: liblimereg
 Section: contrib/graphics
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
-Build-Depends: debhelper (>= 9), liblimereg, libcv-dev, libhighgui-dev, libopencv-dev, libboost-all-dev, help2man
+Build-Depends: debhelper (>= 9), doxygen
 Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
-Package: limereg
+Package: liblimereg
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Lightweight Image Registration
- Commandline application for image registration.
+Description: Library for lightweight image registration
+ Shared object library for application developers that need image registration.
  It automatically aligns two images with similar content to each other.
 
