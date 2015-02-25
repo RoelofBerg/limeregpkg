@@ -5,7 +5,7 @@ Update version info in the source (limereg_common.h), releasenotes.txt, Makefile
 
 Create a signed tag:
 git tag -s -a v1.x.0 -m "Version 1.x.0"
-git push
+git push --tags
 
 Create a branch:
 git checkout -b v1.x
