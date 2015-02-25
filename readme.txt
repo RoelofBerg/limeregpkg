@@ -7,6 +7,8 @@ Create a signed tag:
 git tag -s -a v0.9.0 -m "Version 0.9.0"
 git push --tags
 
+(Note: Delete it again: git tag -d v0.9.0 && git push origin :refs/tags/v0.9.0)
+
 Create a branch:
 git checkout -b v0.9
 git push origin v0.9
