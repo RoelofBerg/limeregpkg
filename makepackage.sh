@@ -30,7 +30,7 @@ cp -r ../debian .
 
 echo Now adapt the files in the folder liblimereg/debian to the new version, e.g. version number
 echo Then execute:
-echo cd liblimereg
+echo cd liblimereg0
 echo git-buildpackage --git-ignore-new
 echo Add -S option for a launchpad source package
 echo cd ..

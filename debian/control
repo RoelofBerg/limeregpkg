@@ -1,4 +1,4 @@
-Source: liblimereg
+Source: liblimereg0
 Section: contrib/graphics
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
