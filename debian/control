@@ -1,4 +1,4 @@
-Source: liblimereg-dev0
+Source: liblimereg-dev
 Section: contrib/graphics
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), doxygen
 Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
-Package: liblimereg-dev0
+Package: liblimereg-dev
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Library for lightweight image registration with header files
