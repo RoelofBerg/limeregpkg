@@ -1,2 +1,2 @@
 # limeregpkg
-Packaging project for liblimereg
+Packaging project for liblimereg-dev
