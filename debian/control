@@ -1,4 +1,4 @@
-Source: liblimereg0
+Source: liblimereg-dev0
 Section: contrib/graphics
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
@@ -6,10 +6,11 @@ Build-Depends: debhelper (>= 9), doxygen
 Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
-Package: liblimereg0
+Package: liblimereg-dev0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Library for lightweight image registration
+Description: Library for lightweight image registration with header files
  Shared object library for application developers that need image registration.
  It automatically aligns two images with similar content to each other.
+ This package contains the library and software developer content like header files.
 
