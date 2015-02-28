@@ -19,7 +19,7 @@ Also upate makepackage.sh
 cd liblimereg0
 git-buildpackage --git-ignore-new -S
 cd ..
-dput -f ppa:roelofberg/liblimereg liblimereg0_0.9.0-0ubuntu1_source.changes
+dput -f ppa:roelofberg/limereg liblimereg-dev_0.9.0-0ubuntu1_source.changes
 
 If Launchpad rejects the file:
 
