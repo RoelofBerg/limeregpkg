@@ -8,7 +8,7 @@ Homepage: https://github.com/RoelofBerg/limereg
 
 Package: limereg
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, liblimereg0
 Description: Lightweight Image Registration
  Commandline application for image registration.
  Automatically aligns two images with similar content to each other.
