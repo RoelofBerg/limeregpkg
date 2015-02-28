@@ -10,7 +10,7 @@ Package: liblimereg-dev
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Developer package for liblimereg
- Shared object library for application developers that need image registration.
- It automatically aligns two images with similar content to each other.
- This package contains the library and software developer content like header files.
+ Developer files (.so link and headerfile) for liblimereg's image registration.
+ Liblimereg automatically aligns two images with similar content to each other.
+
 

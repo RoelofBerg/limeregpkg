@@ -27,9 +27,4 @@ Optional: If something goes wrong call git-buildpackage without the -S option an
 sudo pbuilder --build limereg0_0.9.0-1.dsc  (as written in makepackage.sh)
 to debug the package building process locally.
 
-Delete the tags again: git tag -d v0.9.0 && git push origin :refs/tags/v0.9.0
-Fix the bug
-Add tags again as shown above
-(You may want to cherry pick the fix to master lateron.)
-In debian/changelog raise the subsubminor version: liblimereg0_0.9.0-0ubuntu1 liblimereg0_0.9.0-1ubuntu1
-Repeat clean, build and dput (use the risn subsubminor also in dput)
+Raise the subminor version and upload again (Launchpad needs a new version).
