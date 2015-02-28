@@ -10,6 +10,6 @@ Package: liblimereg0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Library for lightweight image registration
- Shared object library for application developers that need image registration.
+ Shared object library for applications that need image registration, like limereg.
  It automatically aligns two images with similar content to each other.
 
