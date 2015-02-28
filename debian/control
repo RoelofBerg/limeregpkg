@@ -2,7 +2,7 @@ Source: limereg
 Section: contrib/graphics
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
-Build-Depends: debhelper (>= 9), liblimereg0, libcv-dev, libhighgui-dev, libopencv-dev, libboost-all-dev, help2man
+Build-Depends: debhelper (>= 9), liblimereg0, liblimereg-dev, libcv-dev, libhighgui-dev, libopencv-dev, libboost-all-dev, help2man
 Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
@@ -11,5 +11,5 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Lightweight Image Registration
  Commandline application for image registration.
- It automatically aligns two images with similar content to each other.
+ Automatically aligns two images with similar content to each other.
 
