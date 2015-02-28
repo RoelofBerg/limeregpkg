@@ -1,4 +1,4 @@
-limereg (1.2.1-0ubuntu1) utopic; urgency=low
+limereg (1.2.2-0ubuntu1) utopic; urgency=low
 
   * Initial release.
   * Extracted algorithm into liblimereg
