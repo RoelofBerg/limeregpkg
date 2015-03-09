@@ -7,6 +7,7 @@ Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
 Package: liblimereg-dev
+Section: libdevel
 Architecture: any
 Depends: liblimereg0 (= ${binary:Version}), ${misc:Depends}
 Description: Library for lightweight image registration [development files]
@@ -31,5 +32,3 @@ Description: Library for lightweight image registration
  for creating a difference image out of two images. 
  .
  This package contains the runtime shared library.
-
-
