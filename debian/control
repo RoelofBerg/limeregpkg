@@ -1,15 +1,35 @@
 Source: liblimereg
-Section: contrib/graphics
+Section: libs
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
 Build-Depends: debhelper (>= 9), doxygen
 Standards-Version: 3.9.5
 Homepage: https://github.com/RoelofBerg/limereg
 
-Package: liblimereg0
+Package: liblimereg-dev
 Architecture: any
+Depends: liblimereg0 (= ${binary:Version}), ${misc:Depends}
+Description: Library for lightweight image registration [development files]
+ Liblimereg automatically aligns two images with similar content to each other.
+ Given two 2D grayscale images the algorithm returns the rigid transformation
+ parameters detected for the best possible alignment (shift, rotation). There
+ are also functions for a rigid image transformation (shift, rotation) and
+ for creating a difference image out of two images. 
+ .
+ This package contains the header file.
+
+Package: liblimereg0
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Library for lightweight image registration
- Shared object library for image registration, used e.g. by limereg.
- It automatically aligns two images with similar content to each other.
+ Liblimereg automatically aligns two images with similar content to each other.
+ Given two 2D grayscale images the algorithm returns the rigid transformation
+ parameters detected for the best possible alignment (shift, rotation). There
+ are also functions for a rigid image transformation (shift, rotation) and
+ for creating a difference image out of two images. 
+ .
+ This package contains the runtime shared library.
+
 

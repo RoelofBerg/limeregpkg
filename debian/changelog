@@ -1,6 +1,11 @@
-liblimereg0 (0.9.3-0ubuntu1) utopic; urgency=low
+liblimereg (0.9.3-0ubuntu1) utopic; urgency=low
+
+  * Moved to autotools.
+
+ -- Roelof Berg <rberg@berg-solutions.de>  Mon, 09 Mar 2015 22:46:26 +0100
+
+liblimereg (0.9.2-0ubuntu1) utopic; urgency=low
 
   * Initial release.
-  * Moved to autotools.
 
  -- Roelof Berg <rberg@berg-solutions.de>  Wed, 28 Jan 2015 23:41:26 +0100
