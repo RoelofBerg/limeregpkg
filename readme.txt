@@ -1,23 +1,26 @@
 Update the package like this:
 
+cd .../liblimereg
+
 Update version info in configure.ac, add release notes to NEWS
 
 Create a signed tag:
 git tag -s -a v0.9.3 -m "Version 0.9.3"
 git push --tags
 
-Create a branch:
+If new minor or major version: Create a branch:
 git checkout -b v0.9
 git push origin v0.9
 (Later back: git checkout master)
 
-Update version information (etc.) in the debian folder: changelog, files
-Also upate makepackage.sh
+./generate-tarball-distro.sh
+
+cd .../limeregpkg
+
+Update version information (etc.) in debian/changelog
+Also upate version strings in makepackage.sh
 ./cleanup.sh
 ./makepackage.sh
-cd liblimereg0
-git-buildpackage --git-ignore-new -S
-cd ..
 dput -f ppa:roelofberg/limereg liblimereg0_0.9.3-0ubuntu1_source.changes
 
 If Launchpad rejects the file:
