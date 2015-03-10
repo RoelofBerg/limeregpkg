@@ -24,22 +24,23 @@ git-import-orig -u 0.9.3 ../liblimereg-0.9.3.tar.gz
 
 #When debian.tar.gz exists on subsequent runs, restore the debian folder created above
 cp -r ../debian .
+#export DEB_BUILD_OPTIONS="CFLAGS=\"-Ofast\" CXXFLAGS=\"-Ofast\""
 
-echo Now adapt the files in the folder liblimereg/debian to the new version, e.g. version number
-echo Then execute:
-echo cd liblimereg
-echo git-buildpackage --git-ignore-new
-echo Add -S option for a launchpad source package
-echo cd ..
+cd liblimereg
+git-buildpackage -S --git-ignore-new
+git-buildpackage --git-ignore-new
+cd ..
 echo Check the lint output for warnings and errors.
 echo look at the content with dpkg-deb -c *.deb
 echo test the installation with dpkg -i *.deb
 echo Test the package by calling
 echo apt-get install pbuilder
-echo sudo pbuilder --create 
-echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config
+echo sudo pbuilder create --mirror "http://archive.ubuntu.com/ubuntu"
+echo optional: sudo pbuilder update --components "main restricted universe multiverse" --override-config --mirror "http://archive.ubuntu.com/ubuntu"
 echo sudo pbuilder --build liblimereg0_0.9.3-0.dsc
-echo ls /var/cache/pbuilder/results
+echo pushd /var/cache/pbuilder/result
+echo dpkg -c ...
+echo popd
 echo Then publish on launchpad.net, create an account there
 echo add a PPA - not a project-, upload your gnugp key, sign the Ubuntu code
 echo of conduct
