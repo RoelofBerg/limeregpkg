@@ -28,7 +28,7 @@ cp -r ../debian .
 
 cd liblimereg
 git-buildpackage -S --git-ignore-new
-git-buildpackage --git-ignore-new
+echo For testing use instead: git-buildpackage --git-ignore-new
 cd ..
 echo Check the lint output for warnings and errors.
 echo look at the content with dpkg-deb -c *.deb
