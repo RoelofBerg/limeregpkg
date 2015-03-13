@@ -7,6 +7,18 @@
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/default.mk
 
+#CFLAGS=-Ofast
+CFLAGS := $(filter-out -O2,$(CFLAGS))
+#CFLAGS+=-Ofast -flto
+CFLAGS+=-Ofast
+
+#CXXFLAGS=-Ofast
+CXXFLAGS := $(filter-out -O2,$(CXXFLAGS))
+#CXXFLAGS+=-Ofast -flto
+CXXFLAGS+=-Ofast
+
+#LDFLAGS+=-flto
+
 # see FEATURE AREAS in dpkg-buildflags(1)
 #export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
@@ -26,7 +38,4 @@ include /usr/share/dpkg/default.mk
 #override_dh_auto_configure:
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
-
-
-
 
