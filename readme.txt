@@ -3,6 +3,7 @@ Update the package like this:
 cd .../limereg
 
 Update version info in configure.ac, add release notes to NEWS
+If necessary raise interface information in lib/Makefile.ac and limereg.pc.in
 
 Create a signed tag:
 git tag -s -a v1.x.0 -m "Version 1.x.0"
