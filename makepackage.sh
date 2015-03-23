@@ -25,8 +25,7 @@ cp -r ../debian .
 #export DEB_BUILD_OPTIONS="CFLAGS=\"-Ofast\" CXXFLAGS=\"-Ofast\""
 
 cd limereg
-git-buildpackage --git-ignore-new
-# -S
+git-buildpackage --git-ignore-new -S
 echo For testing use instead: git-buildpackage --git-ignore-new
 cd ..
 echo Check the lint output for warnings and errors.
