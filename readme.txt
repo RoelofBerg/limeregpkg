@@ -5,7 +5,7 @@ cd .../limereg
 Update version info in configure.ac, add release notes to NEWS
 If necessary raise interface information in lib/Makefile.ac and limereg.pc.in
 
-Create a signed tag:
+In the limereg folder create a signed tag:
 git tag -s -a v1.x.0 -m "Version 1.x.0"
 git push --tags
 
@@ -24,9 +24,12 @@ Also upate version strings in makepackage.sh
 ./makepackage.sh
 dput -f ppa:roelofberg/limereg limereg_1.x.0-0ubuntu1_source.changes
 
-If Launchpad rejects the file:
+Also tag the version of limeregpkg:
+git tag -s -a v1.x.0 -m "Version 1.x.0"
+git push --tags
 
-Optional: If something goes wrong call git-buildpackage without the -S option and use
+If Launchpad rejects the file:
+If something goes wrong call git-buildpackage without the -S option and use
 sudo pbuilder --build limereg_1.x.0-0.dsc  (as written in makepackage.sh)
 to debug the package building process locally.
 
