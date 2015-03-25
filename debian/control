@@ -16,7 +16,7 @@ Description: Lightweight Image Registration
 Package: liblimereg-dev
 Section: libdevel
 Architecture: any
-Depends: liblimereg0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblimereg1 (= ${binary:Version}), ${misc:Depends}
 Description: Library for lightweight image registration [development files]
  Liblimereg automatically aligns two images with similar content to each other.
  Given two 2D grayscale images the algorithm returns the rigid transformation
@@ -26,7 +26,7 @@ Description: Library for lightweight image registration [development files]
  .
  This package contains the header file.
 
-Package: liblimereg0
+Package: liblimereg1
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
