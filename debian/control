@@ -1,5 +1,5 @@
 Source: limereg
-Section: contrib/graphics
+Section: libdevel
 Priority: optional
 Maintainer: Roelof Berg <rberg@berg-solutions.de>
 Build-Depends: debhelper (>= 9), libcv-dev, libhighgui-dev, libopencv-dev, libboost-dev, libboost-program-options-dev, doxygen, help2man
@@ -7,6 +7,7 @@ Standards-Version: 3.9.5
 Homepage: http://embedded-software-architecture.com/limereg.html
 
 Package: limereg
+Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Lightweight Image Registration
