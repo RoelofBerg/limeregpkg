@@ -3,7 +3,7 @@
 #Procedure taken from: http://grumbel.blogspot.de/2010/05/how-to-build-ubuntu-package.html
 
 #prerequisites:
-#sudo apt-get install dh-make git
+#sudo apt-get install dh-make git git-buildpackage
 #gpg --gen-key
 
 #Import the tar distribution to a new git upstream folder
