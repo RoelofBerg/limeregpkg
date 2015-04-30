@@ -18,8 +18,11 @@ git push origin v1.x
 
 Upload to website.
 Upload to debian
-  (In debian repo call 'git-import-orig --pristine-tar ~/devel/limereg/limereg-1.x.y.tar.gz')
-  (And upload all branches, then send an email)
+  (In debian repo call '
+git-import-orig --pristine-tar --sign-tags ~/devel/limereg/limereg-1.x.y.tar.gz
+git push --all
+git push --tag
+  ' and upload all branches, then send an email)
 
 As long as we're still in Launchpad:
 
