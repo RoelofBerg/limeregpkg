@@ -16,6 +16,13 @@ git push origin v1.x
 
 ./generate-tarball-distro.sh
 
+Upload to website.
+Upload to debian
+  (In debian repo call 'git-import-orig --pristine-tar ~/devel/limereg/limereg-1.x.y.tar.gz')
+  (And upload all branches, then send an email)
+
+As long as we're still in Launchpad:
+
 cd .../limeregpkg
 
 Update version information (etc.) in debian/changelog
