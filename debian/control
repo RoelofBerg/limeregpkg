@@ -20,7 +20,7 @@ Architecture: any
 Depends: liblimereg1 (= ${binary:Version}), ${misc:Depends}
 Description: Library for lightweight image registration [development files]
  Liblimereg automatically aligns two images with similar content to each other.
- Given two 2D grayscale images the algorithm returns the rigid transformation
+ Given two 2D images the algorithm returns the rigid transformation
  parameters detected for the best possible alignment (shift, rotation). There
  are also functions for a rigid image transformation (shift, rotation) and
  for creating a difference image out of two images. 
@@ -34,7 +34,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Library for lightweight image registration
  Liblimereg automatically aligns two images with similar content to each other.
- Given two 2D grayscale images the algorithm returns the rigid transformation
+ Given two 2D images the algorithm returns the rigid transformation
  parameters detected for the best possible alignment (shift, rotation). There
  are also functions for a rigid image transformation (shift, rotation) and
  for creating a difference image out of two images. 

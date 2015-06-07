@@ -6,6 +6,7 @@ Update version info in configure.ac, add release notes to NEWS
 If necessary raise interface information in lib/Makefile.am and limereg.pc.in
 
 In the limereg folder create a signed tag:
+(Ensure that 'git branch' points to 'master')
 git tag -s -a v1.x.0 -m "Version 1.x.0"
 git push --tags
 
@@ -17,12 +18,14 @@ git push origin v1.x
 ./generate-tarball-distro.sh
 
 Upload to website.
-Upload to debian
-  (In debian repo call '
+Upload to debian:
+In the virtualbox debian virtual machine cd ~/debian-science/limereg)
+Update the version information inside all tests in debian/tests/*
+In debian repo call:
 git-import-orig --pristine-tar --sign-tags ~/devel/limereg/limereg-1.x.y.tar.gz
 git push --all
 git push --tag
-  ' and upload all branches, then send an email)
+Then git-upload all branches, then send an email to the debian-science list.
 
 As long as we're still in Launchpad:
 
