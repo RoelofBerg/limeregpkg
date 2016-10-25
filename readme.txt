@@ -25,7 +25,7 @@ In debian repo call:
 git-import-orig --pristine-tar --sign-tags ~/devel/limereg/limereg-1.x.y.tar.gz
 git push --all
 git push --tag
-Test and tag the release
+Test ba calling 'sudo ./test-autopkgtest.sh' from '..' on the debian machine and tag the release
 git tag -s -a debian/1.x.0-1 -m "Release 1.x.0-1"
 git push --all
 git push --tag
