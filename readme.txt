@@ -19,8 +19,13 @@ git push origin v1.x
 
 Upload to website.
 Upload to debian:
-In the virtualbox debian virtual machine cd ~/debian-science/limereg)
-Update the version information inside all tests in debian/tests/*
+Prepare a Debian system as written in debian-science/readme.txt
+cd ~/debian-science/limereg
+Download above created tarball to ~/Downloads
+Create a new entry in the file 'debian/changelog'
+Enter the 'New upstream release' marker as you can see in V 1.4.1
+Update the version information inside all tests in debian/tests/* and debian/rules
+save files and commit to git
 In debian repo call:
 git-import-orig --pristine-tar --sign-tags ~/devel/limereg/limereg-1.x.y.tar.gz
 git push --all
